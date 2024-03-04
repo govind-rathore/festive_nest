@@ -1,24 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import "./App.css";
+
+import WebsiteFooter from "./Components/WebsiteFooter";
+import Dropdown from "./Components/Dropdown";
+import QrCode from "./Components/QrCode";
+import Volnteer from "./Components/Volnteer";
+import MakeEvent from "./Components/MakeEvent";
+import TicketDesign from "./Components/TicketDesign";
+import Golive from "./Components/Golive";
+import WebsiteHeader from "./Components/WebsiteHeader";
+import LandingPage from "./Pages/LandingPage";
+import UpcomingEvents from "./Pages/UpcomingEvents";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {/* This is a Component Route */}
+
+        <Route path="/header" element={<WebsiteHeader />} />
+        <Route path="/footer" element={<WebsiteFooter />} />
+        <Route path="/dropdown" element={<Dropdown />} />
+        <Route path="/qrcode" element={<QrCode />} />
+        <Route path="/volnteer" element={<Volnteer />} />
+        <Route path="/makeEvent" element={<MakeEvent />} />
+        <Route path="/ticketdesign" element={<TicketDesign />} />
+        <Route path="/golive" element={<Golive />} />
+
+
+
+
+
+
+
+        {/* This is a Pages Route */}
+
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/ue" element={<UpcomingEvents />} />
+
+
+
+
+
+        
+      </Routes>
+    </BrowserRouter>
   );
 }
 
