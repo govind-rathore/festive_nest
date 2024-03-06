@@ -11,6 +11,7 @@ import Golive from "./Components/Golive";
 import WebsiteHeader from "./Components/WebsiteHeader";
 import LandingPage from "./Pages/LandingPage";
 import UpcomingEvents from "./Pages/UpcomingEvents";
+import Loginpage from "./Pages/Authentication/Loginpage";
 
 function App() {
   return (
@@ -36,8 +37,9 @@ function App() {
         {/* This is a Pages Route */}
 
         <Route path="/" element={<LandingPage />} />
-        <Route path="/ue" element={<UpcomingEvents />} />
-
+        <Route path="/upcoming-events" element={<UpcomingEvents />} />
+        {/* Authentication */}
+        <Route path="/login" element={<Loginpage />} />
 
 
 
