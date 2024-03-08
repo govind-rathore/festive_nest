@@ -7,12 +7,13 @@ import QrCode from "../Components/QrCode";
 import TicketDesign from "../Components/TicketDesign";
 import Golive from "../Components/Golive";
 import Volnteer from "../Components/Volnteer";
+import Header from "../Components/Header";
 
 const LandingPage = () => {
   return (
     <div>
       {/* Inserting Header Component*/}
-      <WebsiteHeader />
+      <Header/>
 
       <div
         className="bg-white dark:bg-gray-800"
