@@ -29,7 +29,7 @@ import Createeventformcompo1 from "./Components/Createeventformcompo1.js";
 import Createeventformcompo2 from "./Components/Createeventformcompo2.js";
 import Createeventformcompo3 from "./Components/Createeventformcompo3.js";
 import Createventformpage from "./Pages/Createventformpage.js";
-import Createeventcompo1 from "./Components/Createeventcompo1.js";
+
 import Loginpage from "./Pages/Loginpage.js";
 import Login from "./Components/Login.js";
 import Createacccompo1 from "./Components/Createacccompo1.js";
@@ -62,6 +62,7 @@ import Section4 from "./Components/Section4.js";
 import Section5 from "./Components/Section5.js";
 import Section6 from "./Components/Section6.js";
 import Sectionpage from "./Pages/Sectionpage.js";
+import Header from "./Components/Header.js";
 
 
 
@@ -82,7 +83,9 @@ import Sectionpage from "./Pages/Sectionpage.js";
 
 
 
-import Loginpage from "./Pages/Authentication/Loginpage";
+
+
+
 
 function App() {
   return (
@@ -90,7 +93,11 @@ function App() {
       <Routes>
         {/* This is a Component Route */}
 
-        <Route path="/header" element={<WebsiteHeader />} />
+
+        
+{/* This is a Component Route */}
+
+<Route path="/header" element={<WebsiteHeader />} />
         <Route path="/footer" element={<WebsiteFooter />} />
         <Route path="/dropdown" element={<Dropdown />} />
         <Route path="/qrcode" element={<QrCode />} />
@@ -132,6 +139,7 @@ function App() {
         <Route path ="Sec4" element={<Section4/>}/>
         <Route path ="Sec5" element={<Section5/>}/>
         <Route path ="Sec6" element={<Section6/>}/>
+        <Route path ="he" element={<Header/>}/>
         
 
 
@@ -141,12 +149,25 @@ function App() {
 
         {/* This is a Pages Route */}
 
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/la" element={<LandingPage />} />
         <Route path="/ue" element={<UpcomingEvents />} />
-
-
-
-
+        <Route path="/qr" element={<Qrpage/>}/>
+        <Route path="/td" element={<Tdpage/>}/>
+        <Route path="/Volap" element={<Volapppage/>}/>
+        <Route path="/volfom" element={<Volformpage/>}/>
+        <Route path="/Cefp" element={<Createventformpage/>}/>
+  
+        <Route path="/lp" element={<Loginpage/>}/>
+        <Route path="/caa" element={<Createaccpage/>}/>
+        <Route path="/fgp" element={<Forgetpasspage/>}/>
+        <Route path="/tc" element={<Termcpage/>}/>
+        <Route path="/pp" element={<Privacypage/>}/>
+        <Route path="/abu" element={<Aboutuspage/>}/>
+        <Route path="/tdp" element={<Ticketdetailpage/>}/>
+        <Route path="/fep" element={<Findeventpage/>}/>
+        <Route path="/pfg" element={<Profilepage/>}/>
+        <Route path="/cup" element={<Contactuspage/>}/>
+        <Route path="/" element={<Sectionpage/>}/>
 
         
       </Routes>

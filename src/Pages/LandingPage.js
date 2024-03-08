@@ -13,7 +13,7 @@ const LandingPage = () => {
   return (
     <div>
       {/* Inserting Header Component*/}
-      <Header/>
+      <WebsiteHeader/>
 
       <div
         className="bg-white dark:bg-gray-800"
