@@ -1,6 +1,9 @@
-const Header = () => {
 
+
+const Header = () => {
+   
     return (     
+  
         
 <nav class="flex flex-wrap items-center justify-between p-4 bg-white">
 <div className="w-auto lg:order-2 lg:w-1/5 lg:text-center">
@@ -47,6 +50,7 @@ const Header = () => {
         </a>
     </div>
 </nav>
+
          
     );
   };
