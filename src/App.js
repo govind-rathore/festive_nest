@@ -82,6 +82,7 @@ import Sectionpage from "./Pages/Sectionpage.js";
 
 
 
+import Loginpage from "./Pages/Authentication/Loginpage";
 
 function App() {
   return (
@@ -142,27 +143,6 @@ function App() {
 
         <Route path="/" element={<LandingPage />} />
         <Route path="/ue" element={<UpcomingEvents />} />
-        <Route path="/qr" element={<Qrpage/>}/>
-        <Route path="/td" element={<Tdpage/>}/>
-        <Route path="/Volap" element={<Volapppage/>}/>
-        <Route path="/volfom" element={<Volformpage/>}/>
-        <Route path="/Cefp" element={<Createventformpage/>}/>
-  
-        <Route path="/lp" element={<Loginpage/>}/>
-        <Route path="/caa" element={<Createaccpage/>}/>
-        <Route path="/fgp" element={<Forgetpasspage/>}/>
-        <Route path="/tc" element={<Termcpage/>}/>
-        <Route path="/pp" element={<Privacypage/>}/>
-        <Route path="/abu" element={<Aboutuspage/>}/>
-        <Route path="/tdp" element={<Ticketdetailpage/>}/>
-        <Route path="/fep" element={<Findeventpage/>}/>
-        <Route path="/pfg" element={<Profilepage/>}/>
-        <Route path="/cup" element={<Contactuspage/>}/>
-        <Route path="/secp" element={<Sectionpage/>}/>
-
-        
-  
-
 
 
 

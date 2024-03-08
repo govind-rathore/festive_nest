@@ -1,25 +1,20 @@
 import React, { useState, useEffect } from "react";
-import EventListing from "../Components/EventListing";
-import MakeEvent from "../Components/MakeEvent";
-import WebsiteFooter from "../Components/WebsiteFooter";
-import WebsiteHeader from "../Components/WebsiteHeader";
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
-import firebaseConfig from "../Firebase/firebase.config";
-import { useNavigate } from "react-router-dom";
+import firebaseConfig from "../../Firebase/firebase.config";
+
 
 firebase.initializeApp(firebaseConfig);
 
-const UpcomingEvents = () => {
+
+function Loginmodalcomponent() {
   const [user, setUser] = useState(null);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const unsubscribe = firebase.auth().onAuthStateChanged((authUser) => {
       if (authUser) {
         // User is signed in.
         setUser(authUser);
-        console.log(user?.uid);
       } else {
         // User is signed out.
         setUser(null);
@@ -40,17 +35,9 @@ const UpcomingEvents = () => {
     }
   };
 
+
   return (
-    <>
-      {user ? (
-        <div>
-          <WebsiteHeader />
-          <EventListing />
-          <MakeEvent />
-          <WebsiteFooter />
-        </div>
-      ) : (
-        <div className="fixed inset-0 z-50 flex items-center justify-center">
+<div className="fixed inset-0 z-50 flex items-center justify-center">
           <div className="fixed inset-0 bg-black opacity-50"></div>
           <div className="relative z-50 bg-white p-8 rounded-lg shadow-lg">
             <div class="flex flex-col w-full max-w-md px-4 py-8 bg-white rounded-lg shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
@@ -168,9 +155,7 @@ const UpcomingEvents = () => {
             </div>
           </div>
         </div>
-      )}
-    </>
   );
-};
+}
 
-export default UpcomingEvents;
+export default Loginmodalcomponent;

@@ -1,4 +1,47 @@
+import React,{useState, useEffect} from 'react';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import firebaseConfig from '../Firebase/firebase.config';
+
+firebase.initializeApp(firebaseConfig);
 function WebsiteHeader() {
+  const [user, setUser] = useState(null);
+  useEffect(() => {
+    const unsubscribe = firebase.auth().onAuthStateChanged((authUser) => {
+      if (authUser) {
+        // User is signed in.
+        setUser(authUser);
+        console.log(user?.uid)
+      } else {
+        // User is signed out.
+        setUser(null);
+      }
+    });
+  
+    return () => {
+      unsubscribe();
+    };
+  }, [user]);
+  
+
+  const handleSignInWithGoogle = async () => {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    try {
+        await firebase.auth().signInWithPopup(provider);
+    } catch (error) {
+        console.error(error);
+    }
+  };
+  
+  const handleSignOut = async () => {
+    try {
+      await firebase.auth().signOut();
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+
   return (
     
 <nav class="flex flex-wrap items-center justify-between p-4 bg-white h-19 mx-10">
@@ -59,7 +102,17 @@ function WebsiteHeader() {
           class="block mt-4 text-blue-900 lg:inline-block lg:mt-0 hover:text-indigo-600 no-underline"
           href="#"
         >
+          {user?<button onClick={handleSignOut}
+          class="block mt-4 mr-10 text-blue-900 lg:inline-block lg:mt-0 hover:text-indigo-600 no-underline"
+          href="#"
+        >
+          Logout
+        </button>  :
+        <a href={'/login'}
+          class="block mt-4 mr-10 text-blue-900 lg:inline-block lg:mt-0 hover:text-indigo-600 no-underline"
+        >
           Login/Registor
+        </a>}
         </a>
       </div>
     </nav>
