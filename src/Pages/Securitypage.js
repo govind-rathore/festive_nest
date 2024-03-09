@@ -1,16 +1,18 @@
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
-import Volcompo1 from "../Components/Volcompo1";
+import Securitycompo from "../Components/Securitycompo";
 
-
-const Volapppage = () => {
+const Securitypage = () => {
     return (
-        <div>
+        <div> 
             <Header/>
-            <Volcompo1/>
+            <Securitycompo/>
             <Footer/>
+
         </div>
+        
+      
         )
     };
     
-    export default Volapppage;
+    export default Securitypage;

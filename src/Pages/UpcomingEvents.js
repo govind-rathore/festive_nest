@@ -1,9 +1,7 @@
 
-import EventListing from "../Components/EventListing";
+import EventListing from "../Components/Section8";
 import Header from "../Components/Header";
-import MakeEvent from "../Components/MakeEvent";
-import WebsiteFooter from "../Components/WebsiteFooter";
-import WebsiteHeader from "../Components/WebsiteHeader";
+
 import { useUser, SignInButton, SignOutButton } from './Authentication/LoginLogout';
 
 
@@ -23,10 +21,11 @@ const UpcomingEvents = () => {
     <>
       {user ? (
         <div>
-          <WebsiteHeader/>
-          <EventListing />
-          <MakeEvent />
-          <WebsiteFooter />
+          <Header/>
+        
+          
+          <SignOutButton/>
+       
         </div>
       ) : (
         <SignInButton />
