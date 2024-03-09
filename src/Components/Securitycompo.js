@@ -31,9 +31,7 @@ function Securitycompo() {
                                 <div role="cell" className="bg-gray-100">
                                     <div className="bg-white p-5 rounded-md relative h-full w-full">
                                         {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
-                                        <span>
-                                            <img className="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/27R6nk5/home-1.png" alt="home-1" />
-                                        </span>
+                                        
                                         <h1 className="pb-4 text-2xl font-semibold">Introduction to Security</h1>
                                         <div className="my-5">
                                             <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full space-x-3">
@@ -73,9 +71,7 @@ function Securitycompo() {
                                 <div role="cell" className="bg-gray-100">
                                     <div className="bg-white p-5 rounded-md relative h-full w-full">
                                         {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
-                                        <span>
-                                            <img className="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/bdGyLYk/pricetags-1.png" alt="pricetags-1" />
-                                        </span>
+                                        
                                         <h1 className="pb-4 text-2xl font-semibold">Privacy Policy</h1>
                                         <div className="my-5">
                                             <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
@@ -120,9 +116,7 @@ function Securitycompo() {
                                 <div role="cell" className="bg-gray-100">
                                     <div className="bg-white p-5 rounded-md relative h-full w-full">
                                         {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
-                                        <span>
-                                            <img className="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/GT4KHvJ/card-1.png" alt="home-1" />
-                                        </span>
+                                        
                                         <h1 className="pb-4 text-2xl font-semibold">Data Encryption</h1>
                                         <div className="my-5">
                                             <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
@@ -160,9 +154,7 @@ function Securitycompo() {
                                 <div role="cell" className="bg-gray-100">
                                     <div className="bg-white p-5 rounded-md  h-full relative w-full">
                                         {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
-                                        <span>
-                                            <img className="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/rG4r6NJ/notifications-1.png" alt="home-1" />
-                                        </span>
+                                        
                                         <h1 className="pb-4 text-2xl font-semibold">Secure Authentication</h1>
                                         <div className="my-5">
                                             <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
@@ -200,9 +192,7 @@ function Securitycompo() {
                                 <div role="cell" className="bg-gray-100">
                                     <div className="relative bg-white p-5 rounded-md relative h-full w-full">
                                         {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
-                                        <span>
-                                            <img className="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/HFC1hqn/people-1.png" alt="home-1" />
-                                        </span>
+                                        
                                         <h1 className="pb-4 text-2xl font-semibold">Compliance and Certifications</h1>
                                         <div className="my-5">
                                             <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">
@@ -232,9 +222,7 @@ function Securitycompo() {
                                 <div role="cell" className="bg-gray-100">
                                     <div className="relative bg-white p-5 rounded-md relative h-full  w-full">
                                         {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
-                                        <span>
-                                            <img className="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/QX80fYm/lock-closed-1.png" alt="home-1" />
-                                        </span>
+                                        
                                         <h1 className="pb-4 text-2xl font-semibold">Security Measures</h1>
                                         <div className="my-5">
                                             <div className="flex items-center pb-4 dark:border-gray-700 cursor-pointer w-full">

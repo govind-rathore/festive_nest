@@ -3,15 +3,12 @@ import { BrowserRouter, Route, Router, Routes  } from "react-router-dom";
 
 import "./App.css";
 
-import WebsiteFooter from "./Components/WebsiteFooter";
-import Dropdown from "./Components/Dropdown";
-import QrCode from "./Components/QrCode";
-import Volnteer from "./Components/Volnteer";
-import MakeEvent from "./Components/MakeEvent";
-import TicketDesign from "./Components/TicketDesign";
-import Golive from "./Components/Golive";
-import WebsiteHeader from "./Components/WebsiteHeader";
-import LandingPage from "./Pages/LandingPage";
+
+
+
+
+
+
 import UpcomingEvents from "./Pages/UpcomingEvents";
 import Qrcompo1 from "./Components/Qrcompo1";
 import Qrcompo3 from "./Components/Qrcompo3";
@@ -63,6 +60,17 @@ import Section5 from "./Components/Section5.js";
 import Section6 from "./Components/Section6.js";
 import Sectionpage from "./Pages/Sectionpage.js";
 import Header from "./Components/Header.js";
+import Securitypage from "./Pages/Securitypage.js";
+import Securitycompo from "./Components/Securitycompo.js";
+import Sectiondemo1 from "./Components/Section7.js";
+import Loadmorepage from "./Pages/Loadmorepage.js";
+import Platformhostpage from "./Pages/Platformhostpage.js";
+import Creevemainpage from "./Pages/Creevemainpage.js";
+import Eventcompo1 from "./Components/Eventcompo1.js";
+import Platformcompoo1 from "./Components/Platformcompoo1.js";
+import Platformcompoo2 from "./Components/Platformcompoo2.js";
+import Eventcompo2 from "./Components/Eventcompo2.js";
+import Section9 from "./Components/Section9.js";
 
 
 
@@ -97,14 +105,13 @@ function App() {
         
 {/* This is a Component Route */}
 
-<Route path="/header" element={<WebsiteHeader />} />
-        <Route path="/footer" element={<WebsiteFooter />} />
-        <Route path="/dropdown" element={<Dropdown />} />
-        <Route path="/qrcode" element={<QrCode />} />
-        <Route path="/volnteer" element={<Volnteer />} />
-        <Route path="/makeEvent" element={<MakeEvent />} />
-        <Route path="/ticketdesign" element={<TicketDesign />} />
-        <Route path="/golive" element={<Golive />} />
+
+        
+        
+        
+        
+    
+       
         <Route path="/qrcompo1" element={<Qrcompo1/>}/>
         <Route path="/qrcompo2" element={<Qrcompo2/>} />
         <Route path="/qrcompo3" element={<Qrcompo3/>}/>
@@ -140,7 +147,15 @@ function App() {
         <Route path ="Sec5" element={<Section5/>}/>
         <Route path ="Sec6" element={<Section6/>}/>
         <Route path ="he" element={<Header/>}/>
-        
+        <Route path ="secu" element={<Securitycompo/>}/>
+        <Route path ="secd" element={<Sectiondemo1/>}/>
+
+        <Route path ="ec1" element={<Eventcompo1/>}/>
+        <Route path ="ec2" element={<Eventcompo2/>}/>
+
+        <Route path ="ph1" element={<Platformcompoo1/>}/>
+        <Route path ="ph2" element={<Platformcompoo2/>}/>
+        <Route path ="sec9" element={<Section9/>}/>
 
 
 
@@ -149,7 +164,7 @@ function App() {
 
         {/* This is a Pages Route */}
 
-        <Route path="/la" element={<LandingPage />} />
+        
         <Route path="/ue" element={<UpcomingEvents />} />
         <Route path="/qr" element={<Qrpage/>}/>
         <Route path="/td" element={<Tdpage/>}/>
@@ -168,6 +183,12 @@ function App() {
         <Route path="/pfg" element={<Profilepage/>}/>
         <Route path="/cup" element={<Contactuspage/>}/>
         <Route path="/" element={<Sectionpage/>}/>
+        <Route path="/Secur" element={<Securitypage/>}/>
+
+        <Route path="/lmp" element={<Loadmorepage/>}/>
+        <Route path="/php" element={<Platformhostpage/>}/>
+        
+        <Route path="/cremp" element={<Creevemainpage/>}/>
 
         
       </Routes>
